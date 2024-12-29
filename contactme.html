@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            background-color: #f5f4d8;
+            font-family: "Papyrus", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffebf5;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #d687b2;
+            text-shadow: 2px 2px 4px #ad4c85;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            font-family: "Papyrus", sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #d687b2;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #ad4c85;
+        }
+
+        .contact-form button {
+            background-color: #d687b2;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #ad4c85;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-family: "Papyrus", sans-serif;
+            font-size: 16px;
+            color: white;
+            background-color: #d687b2;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #ad4c85;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to drop a message below. I'll get back to you as soon as I can! 💌</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <!-- Back Button -->
+        <a href="seemore.html" class="back-button">← Back</a>
+    </div>
+</body>
+</html>

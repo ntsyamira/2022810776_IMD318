@@ -1,0 +1,249 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasya's Safe Space</title>
+    <style>
+       body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef6f9;
+        }
+
+        header {
+            background-color: #f8bcd6;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b33f92;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #e38cca;
+            border-radius: 5px;
+        }
+
+        marquee {
+            font-size: 18px;
+            color: white;
+        }
+
+        .section-title {
+            background-color: #f8bcd6;
+            padding: 15px 0;
+            color: #333;
+            font-family: 'Papyrus', sans-serif;
+            font-size: 22px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .friends-section {
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #fff0f5;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .friends-section h2 {
+            font-size: 28px;
+            color: #b33f92;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .friend-card {
+            background-color: #f5f4d8;
+            border: 2px solid #b33f92;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px auto;
+            width: 85%;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .friend-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .friend-card img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .friend-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .footer a {
+            color: #f8bcd6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #e38cca;
+            font-size: 18px;
+        }
+
+        /* Popped-up animation */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+            animation: pop-up 0.5s ease-out forwards;
+        }
+
+        @keyframes pop-up {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+            100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        }
+
+        .popup .popup-content {
+            font-size: 18px;
+            color: #b33f92;
+        }
+
+        .popup .popup-button {
+            background-color: #b33f92;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .popup .popup-button:hover {
+            background-color: #e38cca;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>❀ Natasya's Safe Space ❀</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="socmed.html">Social Media</a>
+        <a href="https://www.google.com/maps/dir//Universiti+Teknologi+MARA,+UiTM+Cawangan+Negeri+Sembilan+Kampus,+Jalan,+Kampung+Pilin,+71300+Rembau,+Negeri+Sembilan/@2.510904,101.9805481,22311m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x31cdfd8ea33825ad:0x5aa3255f8a169f1c!2m2!1d102.0629501!2d2.5109066?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Location</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video</a>
+        <a href="favs.html">Favourites</a>
+        <a href="contactme.html">Contact Me</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="section-title">
+        <marquee>❀❤ Welcome To My Safe Space! ❤❀ ❁ My name is <b>Natasya Amira</b>, and I'm <b>so happy</b> to see you! ❁</marquee>
+    </div>
+
+    <!-- Friends Section -->
+    <div class="friends-section">
+        <h2>The Friends Along the Way</h2>
+        <p><a href="seemore.html">Back</a></p>
+
+        <div class="friend-card">
+            <h3>2016 - 2024: High School Friends</h3>
+            <p>At SMK Taman Selayang</p>
+            <p>The friends that came and brought shine to this dull world ❂</p>
+            <img src="schoolfriends.jpg" alt="High School Friends">
+        </div>
+
+        <div class="friend-card">
+            <h3>2021 - 2024: Partner</h3>
+            <p>At University</p>
+            <p>The one that stayed and saw the best through any dark days ❤</p>
+            <img src="him.jpg" alt="Partner">
+        </div>
+
+        <div class="friend-card">
+            <h3>2022 - 2024: Diploma Friends</h3>
+            <p>At UiTM Campus Rembau</p>
+            <p>The friends along the way of adulthood, memories and happiness created with them ❄</p>
+            <div>
+                <img src="shalili.jpg" alt="Shalili">
+                <p>Shalili - The roommate that became the little sister I never had</p>
+            </div>
+            <div>
+                <img src="yien.jpg" alt="Yien">
+                <p>Yien - The roommate that is just too fun for me to tease</p>
+            </div>
+            <div>
+                <img src="ruby.jpg" alt="Ruby">
+                <p>Ruby - The friend that stayed and created joy with the same humor as mine</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>❤️ Made by Passion, Remember To Stay Sweet and Cute! ❤️</p>
+        <p><a href="#Top">Back to Top</a></p>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p> I love them so much 💖</p>
+        </div>
+        <button class="popup-button" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // Popup functionality
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("popup").style.display = "block";
+            }, 2000);
+        };
+    </script>
+
+</body>
+</html>
