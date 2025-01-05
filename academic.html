@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,8 +116,8 @@
         <a href="https://www.google.com/maps/dir//Universiti+Teknologi+MARA,+UiTM+Cawangan+Negeri+Sembilan+Kampus,+Jalan,+Kampung+Pilin,+71300+Rembau,+Negeri+Sembilan/@2.510904,101.9805481,22311m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x31cdfd8ea33825ad:0x5aa3255f8a169f1c!2m2!1d102.0629501!2d2.5109066?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: white; text-decoration: none; font-weight: bold;">Location</a>
         <a href="gallery.html">Gallery</a>
         <a href="video.html">Video</a>
-		<a href="favs.html">Favourites</a>
-		<a href="contactme.html">Contact Me</a>
+        <a href="favs.html">Favourites</a>
+        <a href="contactme.html">Contact Me</a>
     </nav>
 
     <!-- Welcome Section -->
@@ -128,13 +129,18 @@
     <div class="academic-section">
         <div class="section-title">
             <h2 align="center">My Academic History</h2>
-			<p align="center"><a href="seemore.html">Back</a></p>
+            <p align="center"><a href="seemore.html">Back</a></p>
         </div>
 
         <div class="academic-card">
             <h3>2010 - 2015: Primary School</h3>
             <p><b>School:</b> SK (2) Taman Selayang</p>
-            <p><b>Achievements:</b> Completed UPSR with 4A's and 1B</p>
+            <p><b>Achievements:</b></p>
+            <ul>
+                <li>Completed UPSR with 4A's and 1B</li>
+                <li>Represented school in Math Competitions</li>
+                <li>Member of the school's Debate Team</li>
+            </ul>
             <p><b>Years:</b> Year 1 to Year 6</p>
         </div>
 
@@ -142,13 +148,24 @@
             <h3>2016 - 2020: High School</h3>
             <p><b>School:</b> SMK Taman Selayang</p>
             <p><b>Stream:</b> Science Stream</p>
-            <p><b>Achievements:</b> Completed SPM with 5A's and 4B's</p>
+            <p><b>Achievements:</b></p>
+            <ol>
+                <li>Completed SPM with 5A's and 4B's</li>
+                <li>President of the Science Club</li>
+                <li>Won Silver Medal in National Science Quiz</li>
+            </ol>
         </div>
 
         <div class="academic-card">
             <h3>2022 - 2025: Diploma</h3>
             <p><b>University:</b> UiTM Campus Rembau</p>
             <p><b>Program:</b> Diploma in Information Management</p>
+            <p><b>Achievements:</b></p>
+            <ul>
+                <li>Dean's List for 4 consecutive semesters</li>
+                <li>Head of Academic Affairs in the Student Council</li>
+                <li>Organized Tech Expo 2024</li>
+            </ul>
             <p><b>Current Status:</b> Ongoing Semester 5</p>
         </div>
     </div>
@@ -158,49 +175,6 @@
         <p>❤️ Made by Passion, Remember To Stay Sweet and Cute! ❤️</p>
         <p><a href="#top">Back to Top</a></p>
     </footer>
-
-		<script>
-			let slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-				showSlides(slideIndex += n);
-			}
-
-			function currentSlide(n) {
-				showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-				let i;
-				let slides = document.getElementsByClassName("mySlides");
-				let dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {
-					slideIndex = 1;
-				}    
-				if (n < 1) {
-					slideIndex = slides.length;
-				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex - 1].style.display = "block";  
-				dots[slideIndex - 1].className += " active";
-			}
-
-			// Smooth scrolling for anchor links
-			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-				anchor.addEventListener('click', function (e) {
-					e.preventDefault();
-					document.querySelector(this.getAttribute('href')).scrollIntoView({
-						behavior: 'smooth'
-					});
-				});
-			});
-	</script>
 
 </body>
 </html>
